@@ -167,10 +167,16 @@ a {
     margin-top: 70px;
 }
 
-.clients .images img:hover {
-    padding: 24px 32px 18px;
+.clients .images a {
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    height: 90px;
     border-radius: 12px;
-    background: #FFF;
+    background: #ffffff;
+}
+
+.clients .images a:hover {
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.10);
 }
 
