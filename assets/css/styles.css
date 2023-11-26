@@ -15,7 +15,8 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-html, body {
+html,
+body {
     scroll-behavior: smooth;
 }
 
@@ -64,7 +65,7 @@ a {
     z-index: 1;
 }
 
-.hero-wrap {
+.hero {
     display: flex;
     align-items: center;
     position: relative;
