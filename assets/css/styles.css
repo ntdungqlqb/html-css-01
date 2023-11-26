@@ -66,6 +66,7 @@ a {
 
 .hero-wrap {
     display: flex;
+    align-items: center;
     position: relative;
     background-color: #e6f0ff;
     height: calc(100vh - 90px);
@@ -74,7 +75,6 @@ a {
 .navbar {
     display: flex;
     align-items: center;
-    /* padding-top: 38px; */
     padding: 12px 0;
 }
 
@@ -109,10 +109,6 @@ a {
     margin-left: 18px;
     font-size: 1.4rem;
     border-radius: 8px;
-}
-
-.hero {
-    margin-top: 130px;
 }
 
 .hero .info {
