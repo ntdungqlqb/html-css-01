@@ -3,6 +3,10 @@
     .mobile-header {
         display: none;
     }
+
+    .view-all {
+        display: none;
+    }
 }
 
 /* Tablet & Mobile */
@@ -155,6 +159,10 @@
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
     .hide-on-tablet {
+        display: none;
+    }
+
+    .view-all {
         display: none;
     }
 }
