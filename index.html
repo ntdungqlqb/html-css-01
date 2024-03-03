@@ -95,14 +95,28 @@
         />
         <!-- <link rel="stylesheet" href="./assets/fonts/stylesheet.css" /> -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <!-- Header -->
-        <div class="fix-header">
+        <!-- PC Header -->
+        <header class="fix-header">
             <div class="content">
                 <!-- Navbar -->
                 <nav class="navbar">
                     <!-- Logo -->
+                    <label for="menu-checkbox" class="toggle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            fill="currentColor"
+                        >
+                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
                     <a href="#"
                         ><img src="./assets/img/Logo.svg" alt="Besnik."
                     /></a>
@@ -123,7 +137,41 @@
                     </div>
                 </nav>
             </div>
-        </div>
+        </header>
+
+        <!-- Tablet/Mobile Header -->
+        <header class="mobile-header">
+            <input
+                type="checkbox"
+                name=""
+                id="menu-checkbox"
+                class="menu-checkbox"
+                hidden
+            />
+
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- Menu content -->
+            <div class="menu-drawer">
+                <a href="#"
+                    ><img src="./assets/img/Logo.svg" alt="Besnik."
+                /></a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="hide-on-tablet separate">
+                        <a href="#">Sign In</a>
+                    </li>
+                    <li class="hide-on-tablet"><a href="#">Sign Up</a></li>
+                </ul>
+            </div>
+        </header>
         <main>
             <!-- Hero -->
             <div class="hero">
@@ -390,6 +438,9 @@
                                     /><span class="label">2000 Sqft</span>
                                 </div>
                             </div>
+                        </div>
+                        <div class="view-all">
+                            <a href="#" class="btn">View All Properties</a>
                         </div>
                     </div>
                 </div>

@@ -184,7 +184,6 @@ a {
     padding: 0 35px;
     height: 90px;
     border-radius: 12px;
-    background: #ffffff;
 }
 
 .clients .images a:hover {
@@ -315,7 +314,8 @@ a {
 
 .featured .list {
     margin-top: 68px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 

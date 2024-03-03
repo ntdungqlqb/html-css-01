@@ -1,0 +1,257 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+}
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+    .navbar ul {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar>a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .toggle-menu svg {
+        width: 24px;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer {
+        padding: 40px;
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 1;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer ul {
+        margin-top: 10px;
+    }
+
+    .menu-drawer a {
+        display: block;
+        padding: 10px 0;
+        color: #4f5361;
+    }
+
+    .menu-drawer a:hover {
+        text-decoration: underline;
+    }
+
+    .menu-checkbox:checked~.menu-overlay {
+        opacity: 1;
+        visibility: inherit;
+    }
+
+    .menu-checkbox:checked~.menu-drawer {
+        transform: translateX(0);
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero .info {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero .desc {
+        width: 80%;
+        margin: 0 auto 40px;
+    }
+
+    .clients .images {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .list-guide {
+        gap: 0;
+    }
+
+    .guide-item {
+        flex: 1;
+    }
+
+    .featured .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats .row {
+        flex-direction: column;
+    }
+
+    .stats .img-block,
+    .stats .info {
+        width: 100%;
+    }
+
+    .stats .img-block {
+        order: 2;
+    }
+
+    .stats .info {
+        padding: 0;
+        margin-bottom: 0px;
+        order: 1;
+    }
+
+    .stats .sub-title {
+        width: 69%;
+        height: 100%;
+    }
+
+    .stats .info .desc {
+        width: 100%;
+    }
+
+    .stats .row-qty {
+        flex-direction: row;
+    }
+
+    .stats .qty {
+        font-size: 5rem;
+    }
+
+    .stats .qty-desc {
+        font-size: 1.7rem;
+    }
+
+    .subscription .image {
+        margin-right: 40px;
+    }
+
+    .footer .row-top {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 80px;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    .menu-drawer {
+        padding: 30px;
+        inset: 0 35% 0 0;
+    }
+
+    .navbar .actions {
+        display: none;
+    }
+
+    .separate {
+        border-top: 1px solid #e5e5e5;
+    }
+
+    .hero .title {
+        font-size: 5.2rem;
+    }
+
+    .hero .sub-title {
+        margin-bottom: 20px;
+    }
+
+    .hero .desc {
+        width: 100%;
+    }
+
+    .hero {
+        height: calc(100vh - 77px);
+    }
+
+    .clients .desc:last-child {
+        display: none;
+    }
+
+    .list-guide {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .featured .link {
+        display: none;
+    }
+
+    .featured .list {
+        grid-template-columns: 1fr;
+    }
+
+    .view-all {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .stats .sub-title {
+        width: 100%
+    }
+
+    .subscription .image {
+        display: none;
+    }
+
+    .subscription .info {
+        padding: 0 40px;
+        text-align: center;
+    }
+
+    .subscription .body {
+        justify-content: center;
+    }
+
+    .stats .img-block .image {
+        width: 100%;
+    }
+
+    .stats .stats-trend {
+        left: 20px;
+    }
+
+    .stats .row-qty {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 40px;
+    }
+
+    .footer .row-top {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .row-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 20px;
+    }
+}
